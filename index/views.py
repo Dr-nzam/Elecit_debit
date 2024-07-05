@@ -23,4 +23,18 @@ def login (request):
     return render(request, 'index/login.html')
 
 def register (request):
-    return render (request, 'register.html')
+    return render (request, 'index/register.html')
+
+def changerPassword (request):
+    return render (request, 'index/password.html')
+
+def erro401(request):
+
+    return render(request, 'index/401.html')
+
+def erro404 (request):
+
+    return render(request, 'index/404.html')
+
+def erro500 (request):
+    return render (request, 'index/500.html')

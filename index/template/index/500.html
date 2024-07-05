@@ -1,7 +1,5 @@
 {% extends "base_error.html" %}
-{% block  %}
-
-
+{% block content %}
 <main>
 <div class="container">
     <div class="row justify-content-center">
@@ -9,7 +7,7 @@
             <div class="text-center mt-4">
                 <h1 class="display-1">500</h1>
                 <p class="lead">Internal Server Error</p>
-                <a href="index.html">
+                <a href={% url "index"%}>
                     <i class="fas fa-arrow-left me-1"></i>
                     Return to Dashboard
                 </a>
